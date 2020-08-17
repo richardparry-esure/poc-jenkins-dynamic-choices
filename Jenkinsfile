@@ -10,6 +10,7 @@ String fruits = buildScript(fruits_list)
 String items = populateItems(default_item,vegetables_list,fruits_list)
 // Methods to build groovy scripts to populate data
 String buildScript(List values){
+    println "build script" +values
   return "return $values"
 }
 String populateItems(List default_item, List vegetablesList, List fruitsList){
